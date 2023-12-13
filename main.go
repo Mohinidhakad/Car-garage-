@@ -14,7 +14,6 @@ func main() {
 
 	app.Server.ValidateHeaders = false
 
-	// specifying the different routes supported by this service
 	app.GET("/car", h.Get)
 	app.POST("/car", h.Create)
 
