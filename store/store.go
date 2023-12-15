@@ -69,13 +69,13 @@ func (c Store) Create(ctx *gofr.Context, car models.Car) (models.Car, error) {
 	return resp, nil
 }
 
-func (c Store) Update(ctx *gofr.Context, emp models.Car) (models.Car, error) {
+func (c Store) Update(ctx *gofr.Context, car models.Car) (models.Car, error) {
 	var resp models.Car
 
 	//update query
 	queryUpdate := "UPDATE cars (id,CustomerName,CarName,Status) VALUES (?, ?, ?, ?, ?)"
 
-	result, err := ctx.DB().ExecContext(ctx, queryUpdate, emp.ID, emp.CustomerName, emp.CarName, emp.Status)
+	result, err := ctx.DB().ExecContext(ctx, queryUpdate, car.ID, car.CustomerName, car.CarName, car.Status)
 
 	if err != nil {
 		return models.Car{}, errors.DB{Err: err}
@@ -84,14 +84,14 @@ func (c Store) Update(ctx *gofr.Context, emp models.Car) (models.Car, error) {
 	return resp, nil
 }
 
-func (c Store) Delete(ctx *gofr.Context, emp models.Car) (models.Car, error) {
+func (c Store) Delete(ctx *gofr.Context, car models.Car) (models.Car, error) {
 	var resp models.Car
 
 	//delete query
 	queryDelete := "DELETE FROM cars WHERE (id,CustomerName,CarName,Status) VALUES (?, ?, ?, ?, ?)"
 
-	// Execute the INSERT query
-	result, err := ctx.DB().ExecContext(ctx, queryDelete, emp.ID, emp.CustomerName, emp.CarName, emp.Status)
+	
+	result, err := ctx.DB().ExecContext(ctx, queryDelete, car.ID, car.CustomerName, car.CarName, car.Status)
 
 	if err != nil {
 		return models.Car{}, errors.DB{Err: err}
