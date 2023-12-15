@@ -16,6 +16,8 @@ func main() {
 
 	app.GET("/car", h.Get)
 	app.POST("/car", h.Create)
+	app.PUT("/car/{id}", h.Update)
+	app.DELETE("/car/{id}", h.Delete)
 
 	app.Server.HTTP.Port = 3306
 	app.Server.MetricsPort = 2113
