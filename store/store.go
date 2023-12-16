@@ -5,7 +5,6 @@ import (
 	"gofr.dev/pkg/errors"
 	"gofr.dev/pkg/gofr"
 )
-
 type Store struct{}
 
 func New() Store {
@@ -70,31 +69,30 @@ func (c Store) Create(ctx *gofr.Context, car models.Car) (models.Car, error) {
 }
 
 func (c Store) Update(ctx *gofr.Context, car models.Car) (models.Car, error) {
-	var resp models.Car
-
-	//update query
-	queryUpdate := "UPDATE cars (id,CustomerName,CarName,Status) VALUES (?, ?, ?, ?, ?)"
-
-	result, err := ctx.DB().ExecContext(ctx, queryUpdate, car.ID, car.CustomerName, car.CarName, car.Status)
-
-	if err != nil {
-		return models.Car{}, errors.DB{Err: err}
-	}
-
-	return resp, nil
-}
-
-func (c Store) Delete(ctx *gofr.Context, car models.Car) (models.Car, error) {
-	var resp models.Car
-
-	//delete query
-	queryDelete := "DELETE FROM cars WHERE (id,CustomerName,CarName,Status) VALUES (?, ?, ?, ?, ?)"
 
 	
-	result, err := ctx.DB().ExecContext(ctx, queryDelete, car.ID, car.CustomerName, car.CarName, car.Status)
+	queryUpdate := "UPDATE cars SET(CustomerName,CarName,Status) VALUES (WHERE ID =?, ?, ?, ?, ?)"
+
+	_, err := ctx.DB().ExecContext(ctx, queryUpdate, car.ID, car.CustomerName, car.CarName, car.Status)
 
 	if err != nil {
 		return models.Car{}, errors.DB{Err: err}
 	}
-	return resp, nil
+
+	return car, nil
 }
+
+func (c Store) Delete(ctx *gofr.Context, carId int) error {
+
+	
+	queryDelete := "DELETE FROM cars WHERE Id=carId"
+
+	
+	_, err := ctx.DB().ExecContext(ctx, queryDelete, carId)
+
+	if err != nil {
+		return errors.DB{Err: err}
+	}
+	return nil
+}
+
