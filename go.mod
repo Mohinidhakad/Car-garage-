@@ -142,4 +142,11 @@ require (
 	gorm.io/driver/sqlite v1.4.4 // indirect
 	gorm.io/driver/sqlserver v1.4.1 // indirect
 	gorm.io/gorm v1.24.3 // indirect
+        gopkg.in/inf.v0 v0.9.1 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
+	gorm.io/driver/mysql v1.4.5 // indirect
+	gorm.io/driver/postgres v1.4.8 // indirect
+	gorm.io/driver/sqlite v1.4.4 // indirect
+	gorm.io/driver/sqlserver v1.4.1 // indirect
+	gorm.io/gorm v1.24.3 // indirect
 )
