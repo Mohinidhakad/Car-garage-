@@ -15,12 +15,14 @@ Then check in my cmd ->1. go
 Now i am all set from the setup and for upcoming useful packages i will dowload as per the need.
 
 
-------------------------------------------------STAGE=3-----------------------------------------------------------------------------------
+
+-------------------------------------------------------------STAGE=3------------------------------------------------------------------------------------------------------------
 Now we will look after creating repository.
 Then i clone that.
 From now on github will be maintained parallelly, I will keep adding the basic structure, git add, git commit, git push and keep adding stages to readme file according to the progress to the projects.
 
-----------------------------------------------STAGE=4-------------------------------------------------------------------------------------
+
+------------------------------------------------STAGE=4--------------------------------------------------------
 Accordig to the understanding of the project i first develop the database of name cargarage where i creates a table called Cars and then connect to the project  afterword i started creating methods->"Get","Update","Delete","Creat".For that i construct *store file
                                                                             -store.go
                                                                        *handler file 
