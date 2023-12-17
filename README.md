@@ -21,22 +21,27 @@ Then i clone that.
 From now on github will be maintained parallelly, I will keep adding the basic structure, git add, git commit, git push and keep adding stages to readme file according to the progress to the projects.
 
 ----------------------------------------------STAGE=4-------------------------------------------------------------------------------------
-Accordig to the understanding of the project i first develop the database of name cargarage where i creates a table called Cars and then connect to the project  afterword i started creating methods->"Get","Update","Delete","Creat".For that i construct 1)store file
+Accordig to the understanding of the project i first develop the database of name cargarage where i creates a table called Cars and then connect to the project  afterword i started creating methods->"Get","Update","Delete","Creat".For that i construct *store file
                                                                             -store.go
-                                                                       2)handler file 
+                                                                       *handler file 
                                                                             -handler.go
-                                                                       3)models
+                                                                       *models
                                                                              -model.go
-                                                                       4)config
+                                                                       *config
                                                                             -.env
-                                                                        5)Testcase
+                                                                        *Testcase
                                                                             -store_test.go
                                                                             -handler_test.go
-                                                                        6)go.mod
+                                                                        *go.mod
                                                                              -auto build cosist packeger or downloads of project.
-                                                                        7)main.go
+                                                                        *main.go
                                                                               -add all for methods together here to run.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Softwares and commands i used in this project->
+#Golang(go version go1.21.5 windows/amd64)->i use golang ide for my project which For that setup and for package installation and working of project i uesd following commands----*go,*go env,*go version,*go get gofr.dev,*go mod tidy,*go run main.go(main command to run the the project),*go get github.com/DATA61/sqlmock, *go get -u github.com/stretchr/testify and many more.
+#Postman->I used postman to test my APIs,( send requests in Postman to connect to APIs you are working with. Your requests can retrieve, add, delete, and update data). 
+#Git hub->I used git hub to maintain my project and Use GitHub features like issues and pull requests to collaborate with others and improve my code,i used some commands here to creat repo and clone the repo->git init,git clone,git status,mkdir etc.
+          
 
 
                                                                         
