@@ -1,10 +1,9 @@
 # Zopsmart-pro
----------------------------------------------------STAGE=1----------------------------------------------------------------------------------
-As i am new to this technology i started with the que. "what is GO(GOLANG),GOFR and GORM?"
-After taking the theoritical refrences from the artical->" https://medium.com/@mundhraumang.02?source=post_page-----0ea41eaa6c62--------------------------------  " and some other resources, I moved towords seeking some prectical implementations for that again i have to learn  not too much but basics of GO language such as "packages , variables, functions etc " here i found this resource really helpful and shows simplicity of codes-------->https://go.dev/tour/welcome/1<-----------.
+# Step 1
+As I am new to this technology i started with the que. "what is GO(GOLANG),GOFR and GORM?"
+After taking the theoritical refrences from the artical->" https://medium.com/@mundhraumang.02?source=post_page-----0ea41eaa6c62--------------------------------  " and some other resources, I moved towords seeking some prectical implementations for that again i have to learn  not too much but basics of GO language such as packages , variables, functions etc.
 
-
--------------------------------------------------STAGE=2-------------------------------------------------------------------------------------
+# step 2
 After taking some refrences now i setup the environment.
 For that as newbie i downloaded a go env. which we have to setup with vs code.
 But after some searching i get to know about GOLANG COMPILER.
