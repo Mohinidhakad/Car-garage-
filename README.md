@@ -38,9 +38,11 @@ Accordig to the understanding of the project i first develop the database of nam
                                                                               -add all for methods together here to run.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Softwares and commands i used in this project->
-#Golang(go version go1.21.5 windows/amd64)->i use golang ide for my project which For that setup and for package installation and working of project i uesd following commands----*go,*go env,*go version,*go get gofr.dev,*go mod tidy,*go run main.go(main command to run the the project),*go get github.com/DATA61/sqlmock, *go get -u github.com/stretchr/testify and many more.
-#Postman->I used postman to test my APIs,( send requests in Postman to connect to APIs you are working with. Your requests can retrieve, add, delete, and update data). 
-#Git hub->I used git hub to maintain my project and Use GitHub features like issues and pull requests to collaborate with others and improve my code,i used some commands here to creat repo and clone the repo->git init,git clone,git status,mkdir etc.
+### Golang(go version go1.21.5 windows/amd64)->i use golang ide for my project which For that setup and for package installation and working of project i uesd following commands----*go,*go env,*go version,*go get gofr.dev,*go mod tidy,*go run main.go(main command to run the the project),*go get github.com/DATA61/sqlmock, *go get -u github.com/stretchr/testify and many more.
+
+### Postman->I used postman to test my APIs,( send requests in Postman to connect to APIs you are working with. Your requests can retrieve, add, delete, and update data).
+
+### Git hub->I used git hub to maintain my project and Use GitHub features like issues and pull requests to collaborate with others and improve my code,i used some commands here to creat repo and clone the repo->git init,git clone,git status,mkdir etc.
           
 
 
