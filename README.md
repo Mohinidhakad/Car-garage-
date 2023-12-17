@@ -21,4 +21,24 @@ Then i clone that.
 From now on github will be maintained parallelly, I will keep adding the basic structure, git add, git commit, git push and keep adding stages to readme file according to the progress to the projects.
 
 ----------------------------------------------STAGE=4-------------------------------------------------------------------------------------
-Accordig to the understanding of the project i first develop the database of name cargarage where i creates a table called Cars and then connected that through .env afterword i am focusing on creating "get" & "post" so for that i will creat models,handels,store and main file for final connectivity.
+Accordig to the understanding of the project i first develop the database of name cargarage where i creates a table called Cars and then connect to the project  afterword i started creating methods->"Get","Update","Delete","Creat".For that i construct 1)store file
+                                                                            -store.go
+                                                                       2)handler file 
+                                                                            -handler.go
+                                                                       3)models
+                                                                             -model.go
+                                                                       4)config
+                                                                            -.env
+                                                                        5)Testcase
+                                                                            -store_test.go
+                                                                            -handler_test.go
+                                                                        6)go.mod
+                                                                             -auto build cosist packeger or downloads of project.
+                                                                        7)main.go
+                                                                              -add all for methods together here to run.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                                        
+
+                                                                  
